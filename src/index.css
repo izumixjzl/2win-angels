@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Brand tokens, taken from the 2win Angels logo and rate card */
+@theme {
+  --color-blush: #FFF6F9;
+  --color-petal: #FCE7EF;
+  --color-rose: #F8D3E1;
+  --color-rose-line: #E9A9C2;
+  --color-pink: #C2185B;
+  --color-pink-dark: #9E1149;
+  --color-pink-deep: #8E1043;
+  --color-hot: #FF7AB6;
+  --color-berry: #3D1428;
+  --color-ink: #2E1A24;
+  --color-body: #4A2A38;
+  --color-muted: #7A4A5E;
+  --color-on-dark: #F4CADB;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+  body { @apply bg-blush text-ink font-sans antialiased; }
+  :focus-visible { outline: 2px solid var(--color-pink); outline-offset: 3px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Shared pieces */
+@utility eyebrow { @apply text-xs uppercase tracking-[.3em] font-medium text-pink-dark; }
+@utility h2 { @apply font-serif font-medium text-berry text-[38px] sm:text-5xl lg:text-[56px] leading-[1.06]; }
+@utility btn { @apply inline-flex items-center justify-center gap-2.5 rounded-full px-7 py-4 text-xs uppercase tracking-[.16em] font-semibold no-underline transition-colors; }
+@utility btn-pink { @apply btn bg-pink text-white hover:bg-pink-dark; }
+@utility btn-line { @apply btn border border-berry text-berry hover:bg-berry hover:text-blush; }
+@utility btn-light { @apply btn bg-blush text-berry hover:bg-white; }
+@utility btn-ghost { @apply btn border border-white/80 text-white hover:bg-white/15; }
+@utility wrap { @apply mx-auto max-w-[1280px] px-4 sm:px-8; }
