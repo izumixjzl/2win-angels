@@ -1,9 +1,9 @@
-import { defineCliConfig } from 'sanity/cli'
+   import { defineCliConfig } from 'sanity/cli'
 
-export default defineCliConfig({
-  api: {
-    // Paste your Project ID from https://www.sanity.io/manage
-    projectId: '2k950g5y',
-    dataset: 'production',
-  },
-})
+   export default defineCliConfig({
+     api: {
+       projectId: '2k950g5y',
+       dataset: 'production',
+     },
+     studioHost: 'twinangels-studio',
+   })
