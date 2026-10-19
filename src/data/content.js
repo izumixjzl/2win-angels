@@ -45,7 +45,7 @@ export const services = [
   { name: 'Studio Prenup', desc: 'Plain, with makeup, themed, or with video.', from: 'Promo from ₱900', img: '/images/couple-sunflower.jpg', alt: 'A couple holding a sunflower bouquet', pos: '50% 30%' },
   { name: 'Pre-birthday for Kids', desc: 'Plain, themed, or with video.', from: 'Promo from ₱650', img: '/images/baby-first.jpg', alt: 'A baby at a pink first-birthday setup', pos: '42% 50%' },
   { name: 'Pre-birthday for Adults', desc: 'Plain, with lights, themed, or with video.', from: 'Promo from ₱650', img: '/images/woman-crown.jpg', alt: 'A woman wearing a gold tiara', pos: '50% 25%' },
-  { name: 'Maternity', desc: 'Plain, with makeup, themed, or with video.', from: 'Promo from ₱650', img: null, tone: 'light', title: 'Maternity', sub: 'Sessions available' },
+  { name: 'Maternity', desc: 'Plain, with makeup, themed, or with video.', from: 'Promo from ₱650', img: '/images/maternity.jpg', alt: 'A smiling mother-to-be in a white dress and flower crown, holding her baby bump against an orange backdrop', pos: '50% 30%' },
   { name: 'Not sure yet?', desc: "Tell us the occasion and we'll suggest the right package.", from: 'Message us anytime', img: null, tone: 'pink', title: 'Ask the twins', sub: "We'll help you choose", cta: 'Send a message', href: '#book' },
 ]
 
